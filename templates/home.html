@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}HOME{% endblock %}
+{% block content %}
+<h1>get your result here</h1>
+<p>please enter either roll or full name of the student</p>
+<form class="container jumbotron" action="{% url 'studentlist' %}" method="get">
+
+  <input name="q" class="form-control mr-sm-2" type="text" placeholder="Search"
+  aria-label="Search">
+
+
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}DETAIL RESULT{% endblock %}
+{% block content %}
+<div class="student_detail container jumbotron">
+  <p>{{name }}</p>
+  <h3>name:{{ studentresult.name }}</h3>
+  <p>roll: {{ studentresult.roll }}</p>
+  <p>school: {{ studentresult.school }}</p>
+  <p>odia :{{ studentresult.odia }}</p>
+  <p>sanskrit {{ studentresult.sanskrit }}</p>
+  <p>math {{ studentresult.math }}</p>
+  <p>english: {{ studentresult.english }}</p>
+  <p>science: {{ studentresult.science }}</p>
+  <p>ssc: {{ studentresult.ssc }}</p>
+  <p>total: {{ studentresult.total}}</p>
+
+
+</div>
+{% endblock %}

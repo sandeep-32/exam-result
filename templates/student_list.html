@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}RESULT LIST{% endblock %}
+{% block content %}
+<h3>here is your result </h3>
+<div class="container">
+  <div class="jumbotron">
+    {% for student in studentlist %}
+    <h3><a href="#">{{ student.name }}</a></h3>
+    <p>School Name:{{student.school }}</p>
+    <p>Roll: {{ student.roll }}</p>
+    <p>divission: {{ student.div }}</p>
+    <p>--------------------------------</p>
+    <p>math:{{student.math}} | science:{{student.science}}</p>
+    <p>--------------------------------</p>
+    <p>english:{{student.english}}| ssc:{{student.ssc}}</p>
+    <p>--------------------------------</p>
+    <p>odia:{{student.odia }} | sanskrit:{{student.odia}}</p>
+    <p>--------------------------------</p>
+    <h4>you have secured total {{student.total}} marks</h4>
+    <p><a href="{% url 'home' %}">click here</a> to search for another result.</p>
+
+
+
+
+
+  </div>
+
+</div>
+{% endfor %}
+{% endblock %}
